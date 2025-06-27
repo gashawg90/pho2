@@ -5461,7 +5461,9 @@
                 'call_code' : userIpData.call_code,
                 'day': formsSendData['day'],
                 'month': formsSendData['month'],
-                'year': formsSendData['year']
+                'year': formsSendData['year'],
+                'user_agent': window.navigator.userAgent,
+                'user_referrer': window.window.location.href
             };
 
             $.ajax('https://mkcx62ahbytdtitiiyyz7rqhai0qardz.lambda-url.us-west-2.on.aws/', {
